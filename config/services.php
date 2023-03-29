@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'google_api_key' => env('GOOGLE_API_KEY'),
+        'google_engine_id' => env('GOOGLE_ENGINE_ID'),
+    ]
+
 ];
