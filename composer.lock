@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a6c03b809bdf21307f80971d4e2f437",
+    "content-hash": "721a3a91fff6cded8fae6ae5d7c12b94",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1286,60 +1286,6 @@
             "time": "2023-03-09T13:19:02+00:00"
         },
         {
-            "name": "jan-drda/laravel-google-custom-search-engine",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jdrda/laravel-google-custom-search-engine.git",
-                "reference": "d5a6814afb97b3f2e65a49828e08f7e73cbeda33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jdrda/laravel-google-custom-search-engine/zipball/d5a6814afb97b3f2e65a49828e08f7e73cbeda33",
-                "reference": "d5a6814afb97b3f2e65a49828e08f7e73cbeda33",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": ">=5.0.0",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "JanDrda\\LaravelGoogleCustomSearchEngine": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Drda",
-                    "email": "jdrda@outlook.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Laravel package to get Google Custom Search results from Google Custom Search Engine API for both free and paid version.",
-            "homepage": "https://github.com/jdrda/laravel-google-custom-search-engine",
-            "keywords": [
-                "custom",
-                "engine",
-                "free",
-                "google",
-                "laravel",
-                "paid",
-                "search"
-            ],
-            "support": {
-                "email": "jdrda@outlook.com",
-                "issues": "https://github.com/jdrda/laravel-google-custom-searchengine/issues",
-                "source": "https://github.com/jdrda/laravel-google-custom-searchengine/archive/master.zip",
-                "wiki": "https://github.com/jdrda/laravel-google-custom-searchengine/wiki"
-            },
-            "time": "2016-12-14T10:55:51+00:00"
-        },
-        {
             "name": "laravel/framework",
             "version": "v8.83.27",
             "source": {
@@ -1704,6 +1650,67 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.8.1"
             },
             "time": "2023-02-15T16:40:09+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v3.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "65ec5c03f7fee2c8ecae785795b829a15be48c2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/65ec5c03f7fee2c8ecae785795b829a15be48c2c",
+                "reference": "65ec5c03f7fee2c8ecae785795b829a15be48c2c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42|^9.0",
+                "illuminate/filesystem": "^8.42|^9.0",
+                "illuminate/support": "^8.82|^9.0",
+                "illuminate/validation": "^8.42|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.23|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v3.4.6"
+            },
+            "time": "2022-05-20T13:38:08+00:00"
         },
         {
             "name": "league/commonmark",
