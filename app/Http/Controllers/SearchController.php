@@ -22,8 +22,6 @@ class SearchController extends Controller
         
         $query = $request->input('search_term');
 
-        debug($query);
-
         $params = [
             'key' => $apiKey,
             'cx' => $enginId,
@@ -34,10 +32,6 @@ class SearchController extends Controller
         $client = new Client();
         $response = $client->get($endpoint, ['query' => $params]);
         $results = json_decode($response->getBody()->getContents(), true);
-
-        // print_r('<pre>');
-        // print_r($results['items']);
-        // print_r('<pre>');
 
         return view('search_results', ['results' => $results['items'],]);
     }

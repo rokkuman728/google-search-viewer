@@ -9,34 +9,34 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   {{-- JS --}}
   <script src="{{ asset('js/app.js') }}"></script>
-  {{-- popper.js CSS --}}
-  <style>
-    #tooltip {
-      background: #333;
-      color: white;
-      font-weight: bold;
-      padding: 4px 8px;
-      font-size: 10px;
-      border-radius: 4px;
-    }
-  </style>
 </head>
-<body>
-<div class="alert alert-success" role="alert">
-google検索結果一覧
-<div>
+
+<div class="h-full bg-white text-gray-800 p-4 lg:p-8" 
+    x-data="gistsData()" 
+    x-init="init()">
+
+  <header class="flex items-center mb-3">
+    <h1 class="flex-grow" x-text="title">Google検索結果一覧</h1>
+    <button class="inline-flex text-white bg-indigo-500 border-0 py-3 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" x-on:click="goToTop( )">検索画面に戻る</button>
+  </header>
 
 @if (count($results) > 0)
-  <ul>
+  <ul class="list-reset flex flex-col">
     @foreach ($results as $result)
-      <li>
-        <a href="{{ $result['link'] }}">{{ $result['title'] }}</a>
-        <p>{{ $result['snippet'] }}</p>
+      <li class="relative -mb-px block border p-4 border-grey">
+        <a x-bind href="{{ $result['link'] }}"><p class="font-bold">{{ $result['title'] }}</p></a><br>
+        <small x-text="gist.parsed.description">{{ $result['snippet'] }}</small>
       </li>
     @endforeach
   </ul>
 @else
   <p>検索結果がありませんでした</p>
 @endif
+
+<script>
+function goToWelcome() {
+    retun view('search_index');
+}
+</script>
 
 </body>
