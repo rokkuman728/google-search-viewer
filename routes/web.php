@@ -14,5 +14,5 @@ use App\Http\Controllers\SearchController;
 |
 */
 
-Route::get('/', [SearchController::class, 'index']);
+Route::get('/', [SearchController::class, 'index'])->name('search_index');
 Route::post('/search', [SearchController::class, 'search']);

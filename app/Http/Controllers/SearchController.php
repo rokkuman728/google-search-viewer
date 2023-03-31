@@ -33,6 +33,9 @@ class SearchController extends Controller
         $response = $client->get($endpoint, ['query' => $params]);
         $results = json_decode($response->getBody()->getContents(), true);
 
-        return view('search_results', ['results' => $results['items'],]);
+        return view('search_results', [
+            'results' => $results['items'],  
+            'query' => $query,
+        ]);
     }
 }
