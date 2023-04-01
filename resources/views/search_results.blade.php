@@ -40,8 +40,9 @@
   <ul class="list-reset flex flex-col">
     @foreach ($results as $result)
       <li class="relative -mb-px block border p-4 border-grey">
-        <a x-bind href="{{ $result['link'] }}" target="_blank" rel="noopener noreferrer"><p class="font-bold text-blue-700">{{ $result['title'] }}</p></a><br>
-        <small x-text="gist.parsed.description">{{ $result['snippet'] }}</small>
+        <a href="{{ $result['link'] }}" class="font-bold text-blue-700 visited:text-red-600" target="_blank" rel="noopener noreferrer">{{ $result['title'] }}</a><br>
+        <small class="text-gray-500">{{ $result['displayLink'] }}</small><br>
+        <small>{{ $result['snippet'] }}</small>
       </li>
     @endforeach
   </ul>

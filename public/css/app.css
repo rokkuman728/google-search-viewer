@@ -813,6 +813,9 @@ video {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+.visited\:text-red-600:visited {
+  color: rgb(220 38 38 );
+}
 .hover\:border-gray-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
