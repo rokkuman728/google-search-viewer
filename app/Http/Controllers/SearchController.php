@@ -36,6 +36,7 @@ class SearchController extends Controller
         return view('search_results', [
             'results' => $results['items'],  
             'query' => $query,
+            'serchInfo' => $results['searchInformation'],
         ]);
     }
 }
