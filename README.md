@@ -9,6 +9,6 @@ https://user-images.githubusercontent.com/99527608/229261954-2bc811b8-e25c-4f20-
 - Laravel 8.75
 - TailwindCSS 
 
-Custom Search JSON API 使用
+Custom Search JSON API 使用<br>
 レスポンシブ対応
 
