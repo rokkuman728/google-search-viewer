@@ -11,4 +11,12 @@ https://user-images.githubusercontent.com/99527608/229330608-d7fb015a-b3bb-48bf-
 
 Custom Search JSON API 使用<br>   
 レスポンシブ対応<br><br>
-プロジェクトのルートディレクトリにおいてcomposer install実行後、php artisan serveでローカルサーバの起動をお願いいたします。
+
+## ローカルサーバ起動手順
+.env.exsampleファイルを複製いただき、.envファイルの作成をお願いいたします。<br>
+プロジェクトのルートディレクトリにおいてcomposer install実行後、php artisan serveでローカルサーバの起動をお願いいたします。<br>
+下記のエラーが発生した場合は、お手数ですがphp artisan key:generateコマンドを実行後、再度起動をお願いします。
+```
+Illuminate\Encryption\MissingAppKeyException
+No application encryption key has been specified.
+```
