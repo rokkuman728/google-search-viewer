@@ -31,8 +31,8 @@ return [
     ],
 
     'google' => [
-        'google_api_key' => 'AIzaSyDZvgV0OWOmcfWRpcPxQ_7X8qbBXUCqYnE',
-        'google_engine_id' => '35ae9abbb246b4f11',
+        'google_api_key' => env('GOOGLE_API_KEY'),
+        'google_engine_id' => env('GOOGLE_ENGINE_ID'),
     ]
 
 ];
